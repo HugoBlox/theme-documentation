@@ -1,0 +1,222 @@
+# SITE SETUP
+# Guide: https://sourcethemes.com/academic/docs/get-started/
+# Documentation: https://sourcethemes.com/academic/docs/
+#
+# This file is formatted using TOML syntax - learn more at https://learnxinyminutes.com/docs/toml/
+# Each configuration section is defined by a name in square brackets (e.g. `[search]`).
+
+############################
+## Theme
+############################
+
+# Choose a theme.
+#   Latest themes (may require updating): https://sourcethemes.com/academic/themes/
+#   Browse built-in themes in `themes/academic/data/themes/`
+#   Browse user installed themes in `data/themes/`
+theme = "minimal"
+
+# Enable users to switch between day and night mode?
+day_night = true
+
+# Override the theme's font set (optional).
+#   Latest font sets (may require updating): https://sourcethemes.com/academic/themes/
+#   Browse built-in font sets in `themes/academic/data/fonts/`
+#   Browse user installed font sets in `data/fonts/`
+font = ""
+
+# Choose a font size.
+# Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
+font_size = "L"
+
+############################
+## Basic Info
+############################
+
+# Website type
+#   Improve how search engines understand your site.
+#   For personal sites, choose "Person".
+#   For organizations and projects, choose from https://schema.org/Organization#subtypes
+#   E.g. Person, Organization, LocalBusiness, Project, EducationalOrganization
+site_type = "Project"
+
+# Local business type (optional)
+# If you entered "LocalBusiness" above, choose the type of business from https://schema.org/LocalBusiness#subtypes
+local_business_type = ""
+
+# Organization name (optional)
+# Enter an organization or project name. Defaults to the site title from `config.toml`.
+org_name = ""
+
+# Description for social sharing and search engines. If undefined, superuser role is used in place.
+description = ""
+
+############################
+## Site Features
+############################
+
+# Enable source code highlighting? true/false
+# Documentation: https://sourcethemes.com/academic/docs/writing-markdown-latex/#highlighting-options
+highlight = false
+# highlight_languages = ["r"]  # Add support for highlighting additional languages
+# highlight_style = "github"  # For supported styles, see https://cdnjs.com/libraries/highlight.js/
+
+# Enable LaTeX math rendering? true/false
+#   If false, you can enable math on a per page basis as needed.
+math = false
+
+# Enable diagram rendering? true/false
+#   If false, you can enable diagrams on a per page basis as needed.
+diagram = false
+
+# Privacy pack
+#   Show a cookie consent message to visitors
+#   Anonymize IP in Google Analytics (if enabled)
+privacy_pack = false
+
+# Enable visitors to edit pages?
+#   `repo` defines the repository URL. `editable` defines which page types can be edited.
+edit_page = {repo_url = "", content_dir = "", repo_branch = "master", editable = {book = false}}
+
+# Show related content at the bottom of pages?
+show_related = {book = true}
+
+############################
+## Social
+############################
+
+# Default image for social sharing and search engines. Place image in `static/media/` folder and specify image name here.
+sharing_image = ""
+
+# Twitter username (without @). Used when a visitor shares your site on Twitter.
+twitter = ""
+
+############################
+## Regional Settings
+############################
+
+# Date and time format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
+#   Examples: "Mon, Jan 2, 2006" or "2006-01-02"
+date_format = "Jan 2, 2006"
+#   Examples: "3:04 pm" or "15:04"
+time_format = "3:04 PM"
+
+############################
+## Advanced
+############################
+
+# Main menu alignment (l = left, c = center, r = right) and logo options.
+main_menu = {align = "l", show_logo = true, highlight_active_link = true, show_language = false}
+
+# Show estimated reading time for posts? (true/false)
+reading_time = true
+
+# Display next/previous section pager? (true/false)
+section_pager = false
+docs_section_pager = true  # Display pager in Docs layout (e.g. tutorials)?
+
+# Enable in-built social sharing buttons? (true/false)
+sharing = true
+
+# Show a copyright license from creativecommons.org in the site footer?
+# Page specific copyright licenses are also possible by adding this option to a page's front matter.
+copyright_license = {enable = false, allow_derivatives = false, share_alike = true, allow_commercial = false, notice = "This work is licensed under {license}"}
+
+# Abstract length (characters) in the Compact and Portfolio Card list views. Also, see `summaryLength` in `config.toml`.
+abstract_length = 135
+
+# Load JS plugins
+#   E.g. To load `/assets/js/custom.js`, set `plugins_js = ["custom"]`.
+plugins_js  = []
+
+# Avatars.
+# An avatar is an image that appears next to a user's name.
+# An avatar can be uploaded as an image named `avatar` to each user's profile or fetched from Gravatar.com.
+[avatar]
+  # Get user avatars from Gravatar.com? (true/false)
+  gravatar = false
+
+  # Choose a shape for avatar images. Options: circle, square.
+  shape = "circle"
+
+############################
+## Comments
+############################
+[comments]
+  # Comment provider:
+  #   0: Disabled
+  #   1: Disqus (https://disqus.com)
+  #   2: Commento (https://commento.io)
+  engine = 0
+
+  # Which page types are commentable?
+  commentable = {page = true, post = true, docs = true, project = true, publication = true, talk = true}
+
+  # Configuration of Disqus.
+  [comments.disqus]
+    shortname = ""  # Paste the shortname from your Disqus dashboard.
+    show_count = true  # Show comment count in page header? (true/false)
+
+  # Configuration of Commento.
+  [comments.commento]
+    # If self-hosting Commento, enter its URL here (e.g. "https://commento.?.com"), otherwise leave empty.
+    url = ""
+
+############################
+## Search
+############################
+[search]
+  # Search provider:
+  #   0: No search engine
+  #   1: Academic (built-in)
+  #   2: Algolia (https://www.algolia.com)
+  engine = 1
+
+  # Configuration of Algolia search engine.
+  # Paste the values from your Algolia dashboard.
+  [search.algolia]
+    app_id = ""
+    api_key = ""
+    index_name = ""
+    show_logo = false
+
+############################
+## Maps
+############################
+[map]
+  # To show your address on a map in the Contact widget, enter your latitude and longitude (above)
+  # and choose a map provider below.
+  #
+  # To use Google Maps, set `engine` to 1 and enter your API key that can be obtained here:
+  #   https://developers.google.com/maps/documentation/javascript/get-api-key
+  # To use OpenStreetMap tiles, set `engine` to 2.
+  # To use OpenStreetMap on a high traffic site, set `engine` to 3 and enter your API key that can be obtained here:
+  #   https://www.mapbox.com/studio/account/tokens
+  #
+  # Map provider:
+  #   0: No map
+  #   1: Google Maps
+  #   2: OpenStreetMap (Mapnik)
+  #   3: OpenStreetMap (Mapbox)
+  engine = 0
+  api_key = ""
+  zoom = 15
+
+############################
+## Marketing
+############################
+[marketing]
+  google_analytics = ""
+  google_tag_manager = ""
+
+############################
+## Content Management System
+############################
+[cms]
+  # See https://sourcethemes.com/academic/docs/install/#install-with-web-browser
+  netlify_cms = true
+
+############################
+## Icon Pack Extensions
+############################
+[icon.pack]
+  ai = false  # Academicons icon pack https://jpswalsh.github.io/academicons/

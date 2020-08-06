@@ -1,0 +1,37 @@
+backend:
+  name: git-gateway
+  branch: master
+media_folder: 'static/media/'
+public_folder: 'media'
+collections:
+  - name: pages
+    label: "Pages"
+    files:
+      - file: "content/privacy.md"
+        label: "Privacy Policy"
+        name: "privacy"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Publish Date", name: "date", widget: "datetime"}
+          - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+          - {label: "Summary", name: "summary", widget: "markdown", required: false}
+          - label: "Draft"
+            name: "draft"
+            required: false
+            widget: "boolean"
+            default: false
+          - {label: "Body", name: "body", widget: "markdown"}
+      - file: "content/terms.md"
+        label: "Terms"
+        name: "terms"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Publish Date", name: "date", widget: "datetime"}
+          - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+          - {label: "Summary", name: "summary", widget: "markdown", required: false}
+          - label: "Draft"
+            name: "draft"
+            required: false
+            widget: "boolean"
+            default: false
+          - {label: "Body", name: "body", widget: "markdown"}
