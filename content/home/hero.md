@@ -8,7 +8,7 @@ weight = 10  # Order that this section will appear.
 title = "Book Template"
 
 # Hero image (optional). Enter filename of an image in the `static/media/` folder.
-hero_media = ""
+hero_media = "book.svg"
 
 [design.background]
   # Apply a background color, gradient, or image.
@@ -37,7 +37,7 @@ hero_media = ""
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
 [cta]
-  url = "#"
+  url = "docs/"
   label = "Get Started"
   icon_pack = "fas"
   icon = "download"
@@ -48,12 +48,10 @@ hero_media = ""
 
 # Note. An optional note to show underneath the links.
 [cta_note]
-  label = '<span class="js-github-release" data-repo="gcushen/hugo-academic">Latest release<!-- V --></span>'
+  label = '<span class="js-github-release" data-repo="gcushen/hugo-academic">Show your product version here:<!-- V --></span>'
 +++
 
-For Academic Website Builder.
-
-
+For [Academic Website Builder](https://sourcethemes.com/academic/).
 
 Write something interesting about your project here.
 
