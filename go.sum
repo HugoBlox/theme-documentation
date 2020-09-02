@@ -1,2 +1,2 @@
-github.com/gcushen/hugo-academic v0.29.1-0.20200831163630-07facf5828ab h1:khv6bOU0FgvwA1wvjsb4jQYt6f3rWiXdFwgjODYFBHk=
-github.com/gcushen/hugo-academic v0.29.1-0.20200831163630-07facf5828ab/go.mod h1:FvyiRg2RsvpDYk5mfUHjwykBk0Lx/khc5e4XtBkjq8g=
+github.com/wowchemy/wowchemy-hugo-modules/wowchemy v0.0.0-20200902195927-86da39719ccd h1:ib4vY08iCxJQlQtf0m/Bz9Ha2HJ83te60V9NCnTR6VE=
+github.com/wowchemy/wowchemy-hugo-modules/wowchemy v0.0.0-20200902195927-86da39719ccd/go.mod h1:H22qfH9qj3FWwsk7+bAZpmT24yRGNQURah2/IRwjbn8=
