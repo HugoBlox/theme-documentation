@@ -1,5 +1,5 @@
 # Configuration of Hugo
-# Guide: https://sourcethemes.com/academic/docs/get-started/
+# Guide: https://wowchemy.com/docs/get-started/
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 #
 # This file is formatted using TOML syntax - learn more at https://learnxinyminutes.com/docs/toml/
@@ -10,7 +10,7 @@ title = "My Book | Made with Academic"
 
 # The URL of your site.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "/"
+baseurl = ""
 
 # Enter a copyright notice to display in the site footer.
 # To display a copyright symbol, type `&copy;`. For current year, type `{year}`.
@@ -34,14 +34,13 @@ paginate = 10  # Number of items per page in paginated lists.
 enableEmoji = true
 enableRobotsTXT = true
 footnotereturnlinkcontents = "<sup>^</sup>"
-ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_files$", "_cache$"]
+ignoreFiles = ["\\.ipynb$", ".ipynb_checkpoints$", "\\.Rmd$", "\\.Rmarkdown$", "_cache$"]
 
-# Workaround Hugo publishing taxonomy URLs as plurals - consistently use singular across Academic.
 [permalinks]
+  # Workaround Hugo publishing taxonomy URLs as plurals - consistently use singular across Academic.
   authors = "/author/:slug/"
   tags = "/tag/:slug/"
   categories = "/category/:slug/"
-  publication_types = "/publication-type/:slug/"
 
 [outputs]
   home = [ "HTML", "RSS", "JSON", "WebAppManifest" ]

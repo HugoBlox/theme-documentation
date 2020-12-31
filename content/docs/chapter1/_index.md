@@ -14,6 +14,8 @@ type: book  # Do not modify.
 
 ## Flexibility
 
+Document everything!
+
 This feature can be used for publishing content such as:
 
 * **Online courses**
