@@ -105,7 +105,7 @@ time_format = "3:04 PM"
 ############################
 
 # Main menu alignment (l = left, c = center, r = right) and logo options.
-main_menu = {align = "l", show_logo = true, highlight_active_link = true, show_language = false, show_day_night = true, show_search = true}
+main_menu = {enable = true, align = "l", show_logo = true, highlight_active_link = true, show_language = false, show_day_night = true, show_search = true}
 
 # Show estimated reading time for posts? (true/false)
 reading_time = true
@@ -137,13 +137,13 @@ plugins_js  = []
 ############################
 [comments]
   # Comment provider:
-  #   0: Disabled
-  #   1: Disqus (https://disqus.com)
-  #   2: Commento (https://commento.io)
-  engine = 0
+  #   "": Disabled
+  #   "disqus": Disqus (https://disqus.com)
+  #   "commento": Commento (https://commento.io)
+  provider = ""
 
   # Which page types are commentable?
-  commentable = {book = false}
+  commentable = {book = true}
 
   # Configuration of Disqus.
   [comments.disqus]
@@ -160,10 +160,10 @@ plugins_js  = []
 ############################
 [search]
   # Search provider:
-  #   0: No search engine
-  #   1: Academic (built-in)
-  #   2: Algolia (https://www.algolia.com)
-  engine = 1
+  #   "": No search engine
+  #   "wowchemy": Built-in search engine
+  #   "algolia": Algolia (https://www.algolia.com)
+  provider = "wowchemy"
 
   # Configuration of Algolia search engine.
   # Paste the values from your Algolia dashboard.
@@ -174,40 +174,19 @@ plugins_js  = []
     show_logo = false
 
 ############################
-## Maps
-############################
-[map]
-  # To show your address on a map in the Contact widget, enter your latitude and longitude (above)
-  # and choose a map provider below.
-  #
-  # To use Google Maps, set `engine` to 1 and enter your API key that can be obtained here:
-  #   https://developers.google.com/maps/documentation/javascript/get-api-key
-  # To use OpenStreetMap tiles, set `engine` to 2.
-  # To use OpenStreetMap on a high traffic site, set `engine` to 3 and enter your API key that can be obtained here:
-  #   https://www.mapbox.com/studio/account/tokens
-  #
-  # Map provider:
-  #   0: No map
-  #   1: Google Maps
-  #   2: OpenStreetMap (Mapnik)
-  #   3: OpenStreetMap (Mapbox)
-  engine = 0
-  api_key = ""
-  zoom = 15
-
-############################
 ## Marketing
 ############################
 [marketing]
   google_analytics = ""
   google_tag_manager = ""
+  google_site_verification = ""
 
 ############################
 ## Content Management System
 ############################
 [cms]
-  # See https://wowchemy.com/docs/install/
-  netlify_cms = true
+  branch = "main"
+  local_backend = false
 
 ############################
 ## Icon Pack Extensions

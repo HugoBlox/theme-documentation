@@ -8,7 +8,7 @@ The **Book Template** empowers you to create **product documentation**, **digita
 
 [**Wowchemy**](https://github.com/wowchemy/wowchemy-hugo-modules) makes it easy to create a beautiful website for free using Markdown, Jupyter, or RStudio. Customize anything on your site with widgets, themes, and language packs.
 
-- 👉 [**Get Started**](https://wowchemy.com/docs/install/)
+- 👉 [**Get Started**](https://wowchemy.com/templates/)
 - 📚 [View the **documentation**](https://wowchemy.com/docs/)
 - 💬 [Chat with the **Wowchemy community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
 - 🐦 Twitter: [@wowchemy](https://twitter.com/wowchemy) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithWowchemy](https://twitter.com/search?q=(%23MadeWithWowchemy%20OR%20%23MadeWithAcademic)&src=typed_query)
