@@ -1,6 +1,6 @@
 <!--<p align="center"><a href="https://wowchemy.com" target="_blank" rel="noopener"><img src="https://sourcethemes.com/academic/img/logo_200px.png" alt="Wowchemy Website Builder"></a></p>-->
 
-# Hugo Project Documentation Theme for [Wowchemy Website Builder](https://wowchemy.com)
+# [Hugo Project Documentation Theme](https://github.com/wowchemy/hugo-documentation-theme) for [Wowchemy Website Builder](https://wowchemy.com)
 
 The **Project Documentation Template** empowers you to create **product documentation**, **digital books**, **personal notes**, and **knowledge bases**.
 
