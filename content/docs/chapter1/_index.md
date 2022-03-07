@@ -7,8 +7,8 @@ icon: book
 icon_pack: fas
 
 # Page metadata.
-title: Chapter 1
-date: "2018-09-09T00:00:00Z"
+title: 基于AdalmPluto的射电天文望远镜
+date: "2022-03-07T00:00:00Z"
 type: book  # Do not modify.
 ---
 
