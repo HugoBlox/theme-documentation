@@ -7,12 +7,14 @@ icon: book
 icon_pack: fas
 
 # Page metadata.
-title: Chapter 1
+title: Recherche Opérationnelle
 date: '2018-09-09T00:00:00Z'
 type: book # Do not modify.
 ---
 
-## Flexibility
+## Introduction
+
+La recherche opérationnelle est un ensemble de éthode visant à résoudre de manière numérique des problèmes d'optimisation fréquement rencontrés dans le monde industriel. 
 
 Document everything!
 
